@@ -1,10 +1,12 @@
 #pirmas {
 border: 12px solid rgb(78, 75, 238);
+box-shadow: 5px 5px 15px black;
 }
 
 #antras{
 padding: 5em;
 border-radius: 150px;
+box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 #trecias {
@@ -45,3 +47,19 @@ div {
     margin-left: auto;
     margin-right: auto;
 }
+
+#penktas > ul li {
+    display: inline;
+
+}
+
+#sestas {
+    background-color: rgb(93, 93, 217);
+    padding: 30px;
+    
+}
+
+#sestas form input {
+    display: block;
+}
+
