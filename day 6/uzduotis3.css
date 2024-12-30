@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background-image: url(https://gratisography.com/wp-content/uploads/2024/11/gratisography-fashion-tv-1170x780.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+
+}
+
+#info h1 {
+    margin: 0;
+    display: inline-block;
+    background-color: rgb(84, 84, 251);
+    color: rgb(224, 221, 230);
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#info p {
+    background-color: rgb(173, 115, 227);
+    color: aliceblue;
+    font-size: 1.5em;
+    max-width: 50%;
+}
+
+header #info {
+    position: absolute;
+    left: 10vw;
+    bottom: 10vh;
+    margin: 0;
+    background: none;
+    
+}

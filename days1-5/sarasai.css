@@ -1,0 +1,17 @@
+ul > li {
+    list-style-type: square;
+}
+
+ol > li {
+    list-style-type: upper-roman;
+}
+
+.saraso-elementai {
+    list-style-type: none;
+    border-bottom: 2px solid silver;
+}
+
+.saraso-elementai::before {
+    content: '\00A7';
+    color: blue;
+}
