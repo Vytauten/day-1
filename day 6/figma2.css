@@ -1,0 +1,166 @@
+html, body {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;   
+background: #E2E1E1;
+
+}
+
+
+
+#foto1 {
+    height: 175px;
+    background-image: url(https://gratisography.com/wp-content/uploads/2024/11/gratisography-fashion-tv-1170x780.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    border-start-start-radius: 12px;
+    border-top-right-radius: 12px;
+    
+}
+
+
+.kortos_apacia {
+    height: auto;
+    background-color: aliceblue;
+    position: relative;
+    border-end-end-radius: 12px;
+    padding: 0px 0px;
+    padding-top: 20px;
+    
+    
+}
+
+.irasas1 {
+   
+
+
+width: fit-content;
+height: auto;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+
+letter-spacing: 0.2px;
+
+
+color: #959393;
+
+
+}
+
+.irasas2 {
+   
+
+width: fit-content;
+height: auto;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #121212;
+
+
+}
+
+.icon_container {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+
+.korta_container {
+    height: auto;
+    width: 276px;
+    position: relative;
+    background: aliceblue;
+    display: block;
+    border-radius: 12px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   padding-bottom: 15px;
+   box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+
+}
+
+#datadiv {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(40, 41, 61, 0.04), 0px 1px 4px rgba(96, 97, 112, 0.16);
+    border-radius: 12px;
+    width: 56px;
+height: 56px;
+right: 15;
+bottom: 4px;
+position: relative;
+top: 165px;
+z-index: 50;
+margin-left: auto;
+
+
+}
+
+
+
+h4 {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #121212;
+margin-bottom: 0;
+margin-top: 0;
+padding-top: 4px;
+}
+
+#menesis {
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 10px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #121212;
+
+
+}
+
+p {
+    padding: 0;
+    margin: 15px;
+}
+
+
+#foto2 {
+    
+    background-image: url(https://s3-alpha-sig.figma.com/img/ea5a/d9b8/4437c31c90bf5fcdb26cc54afe0f8d45?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YsJ5LcaHxBQ3-rTi4sMimcIN19hTB-wD1J74~6BLeftUV4hdbODKE92pdjap0Up~08xOA7hcpEdxYrLc2L1VLixGY5VHYaJxawR4HQNcPgqIYll2ZDT6TEgEj6xPwKabTyzgD~Yb6uvmYNa1oPbYXTKtCYgSGKq5tz7jIQNFuEjysle6Rd5hZMofIhX5xd9LPo7sLowvJkqiefZ1uwVYpPEY3mgMv9lMy~TM5bsqi323JxnXxV-aojcspbWXig0V1tlFNwvwhGHH~zCITnld1DfgXbq5o4WgEVkGhf9vutqCErZzzd8WGvTf2qSgoVuzZV8hgIZeHk-Z~CNvVMOusQ__);
+    height: 175px;
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    border-start-start-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+#foto3 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/4cc6/ed5d/78c19cb44b62c1f11df8a8c8c87d1fde?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PrObOiktemnLPjP9K~nbSMWzh2o0cC7~rmbvZuaT7wiWb~4Xu1kZQKsPJYMcxm1hfciXx6HNxByLLxApc5tv7asSri2tVauBYAbI9w0FK8jkwoV-3LcBcV~l0ctjiUheW5GsBjGTeA4FpCznJFW7J8yy6aApx6BO3NEX-UOKPZwYUTf6WS8e4THzL8TM7iXJhATipzWAdOmb8tDPlBZy79bS6q4deHqjwoTOr~-XyrmAeOce8y1dHP2ot4rEqb0yYX-IU1u64hozqTCRqWD--G2HVmygIQPI8M~ELph-WjHpqT7q-yxkFanSx1wV-wWpDw3tqwLBAz32lLqwJ--KAA__);
+    height: 175px;
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    border-start-start-radius: 12px;
+    border-top-right-radius: 12px;
+}
