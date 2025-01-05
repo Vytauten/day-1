@@ -1,0 +1,50 @@
+body {
+    background-color: orange;
+    display: flex;
+}
+
+.div1 {
+    display: flex;
+    gap: 10px;
+}
+
+.div2 {
+    display: flex;
+    background-color: rgb(223, 89, 0);
+    padding: 20px;
+    gap: 30px;
+}
+
+.div2 > p {
+    background-color: rgb(255, 255, 255);
+}
+
+.div3 {
+    display: flex;
+    width: 80%;
+    flex-wrap: nowrap;
+    justify-self: center;
+    
+    
+
+}
+
+.div3 > p {
+    background: white;
+    padding: 20px;
+}
+
+.div4 {
+    display: flex;
+    background-color: rgb(223, 89, 0);
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.div4 > p {
+    background-color: orange;
+    padding: 20px;
+    width: 400px;
+    
+}
