@@ -1,0 +1,152 @@
+body {
+    background: #131417;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    }
+    
+    .container {
+    
+    position: relative;
+    width: 675px;
+    height: auto;
+    background: rgba(34, 34, 37, 0.7);
+    border-radius: 12px;
+    border: #eb1c1c;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+    
+    }
+
+
+.div1 > h1 {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+display: flex;
+align-items: center;
+letter-spacing: 0.42px;
+color: #FFFFFF;
+position: ;
+}
+
+
+.div2 > p {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+
+.button1 {
+
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+width: 144px;
+height: 42px;
+border: 2px solid #F17965;
+border-radius: 12px;
+background: none;
+transition: all ease-in 0.5s;
+}
+
+
+.button1:hover {
+
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+width: 144px;
+height: 42px;
+background: #F79090;
+border: 2px solid #F17965;
+border-radius: 12px;
+transition: all ease-in 0.5s;
+cursor: pointer;
+}
+
+.button1:hover h4 {
+    color: #FFFFFF;
+    transition: all ease-in 0.5s;
+    cursor: pointer;
+}
+
+.div3 h4 {
+width: 112px;
+height: 26px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+display: flex;
+align-items: center;
+letter-spacing: -0.05em;
+color: #F17965;
+flex: none;
+order: 0;
+flex-grow: 0;
+transition: all ease-in 0.5s;
+}
+
+p {
+    padding: 0px;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.padding {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-top: 65px;
+    padding-bottom: 66px;
+    padding-left: 77px;
+    padding-right: 77px;
+    
+}
+
+#icon1 {
+    position: absolute;
+    width: 195px;
+    height: 195px;
+    left: -8%;
+    top: -15%;
+    transform: rotate(10.68deg);
+}
+
+#icon2 {
+    /* Ellipse 2 */
+
+position: absolute;
+right: -40px;
+bottom:  -50px;
+}
+
+
