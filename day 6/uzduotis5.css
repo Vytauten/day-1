@@ -37,7 +37,8 @@ padding-right: 199px;
 
 #about {
     position: sticky;
-    background-image: linear-gradient(#AFBACB, #AFBACB00)
+    background-image: linear-gradient(#AFBACB, #AFBACB00);
+    top: 0%;
 }
 
 .tekstas {
