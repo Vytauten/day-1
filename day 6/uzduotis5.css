@@ -1,0 +1,61 @@
+body {
+    min-height: 100vh;
+background-color: #fffff;
+
+
+}
+
+#image1 {
+    width: 100%;
+    height: 373px;
+    position: relative;
+    background-image: url(https://s3-alpha-sig.figma.com/img/d287/9f5e/e9f55fc7375b2d039dbfeda5c7065ac9?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mIaZDC2a3H1U~H0sdOruVAUanU6Kr7f1RQAtrfhLn81qFiNtdZfGZQWsr7rjOfczSDul5NsctLYy6GIaoH88YPob5nL9F8Cil1g84CoKMQP0Udqn2p14l9ucnROf67nLXgFPR6wM5W2ZjGRppWL2krVfztLWB5WG65z6pR1iJqTNejdV6ytgJ04yWWz1PGkaU0ygGZj9xgk0A1mdqM0~wL6Hjb7kFm5cfXDP7GKqbpz9748AtiICt9y-CygZpLNMcwFd3ADMYdWhePc8IfwsTS6w-7DJrzKkVmtQi2ePsd8p6xOGR81D2R61jNdxngfwpHKC3tTeiFJGpXFf6WlW1w__);
+    background-position: center center;
+    background-size: cover;
+}
+
+h2 {
+
+
+position: relative;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 100%;
+display: flex;
+align-items: center;
+letter-spacing: 0.42px;
+color: #373636;
+padding-top: 15px;
+padding-bottom: 15px;
+margin: 0;
+padding-left: 133px;
+padding-right: 199px;
+ 
+}
+
+#about {
+    position: sticky;
+    background-image: linear-gradient(#AFBACB, #AFBACB00)
+}
+
+.tekstas {
+position: relative;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+display: flex;
+align-items: center;
+letter-spacing: 0.42px;
+color: #000000;
+}
+
+.tekstaidiv {
+    padding-left: 133px;
+    padding-right: 199px;
+    padding-top: 56px;
+    padding-bottom: 132px;
+}
