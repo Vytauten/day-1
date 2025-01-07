@@ -1,0 +1,176 @@
+body {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    margin-left: 160px;
+    margin-right: 160px;
+
+}
+
+h1 {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 150%;
+color: #000000;
+margin: 0;
+margin-left: 50px:
+flex: none;
+order: 0;
+flex-grow: 0;
+height: 162px;
+
+}
+
+h2 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+margin: 0;
+color: #000000;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+P {
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #777777;
+margin: 0;
+
+
+
+}
+
+.kortacontainer {
+    width: 25%;
+    height: auto;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+background: #FFFFFF;
+border: 1px solid #84AD40;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+border-radius: 16px;
+}
+
+#foto1 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/5846/35d6/80147faad158eec9812bd211e8267280?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qFfJzq9VVK8su4XQYspCDS2msJEj0DJlcetYemBxUYcKAb9RjqFuFiKNau81NzP5AvIdXLDOLdKSfV5u1Ihx7B78eBDNfwZ~qYR3-8a1Q2C3DZDVCJtxAK2cL9~xUzbu~Aow6eK~O3D15O5NahmwOkiDI0VVnnJ~IBuzjNKoKxyCA5hmP1j6Muhggmt53Eb-a~3n7AFu3LJ8aA5Tk0zbQANZX6PxrZKN4rhA7BAOmIV3te57E2ojZ9MRbVIjsJKNSO1JgP5SmY9X13CdzsQfHAi-RhY7BCMhNdD~tYMidk-iX~Vp4TlwzELe2xTd0K-qcVfkibQtiIbusKI1hxgUfg__);
+}
+
+#foto2 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/a64c/a98b/c99a8d4c235e0d785604c34863335204?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kc2zDVO8dCw--iJ6D7jSRbUz21wtFM1Ojf34uiWF0N9R1mjsXieJLXJXZwOrTCKQf2KW9DlmMKZXjlEzkM1BOE5z2gmdYMsRtyoEVQG07gciXlecFNllnKXgJuaT7nQqQWsqnySdPBCZzGCN498n4tOfwEy-WZznf5sifjG0pi58tgFEzQot2tyRoJBsTVkR8oTjBN9ahIFnHfEkNsxwEjrp2bFOmSJ1PT1Mq2TwSk9pOyCx0cymW7kG9TBdLiejEk1po8Mal7kZ18hv5LuUMStIWCaoZKBfOv8wtz4AUlDPJAR1EDYpmNOXc~lQGIVIRFUSz5Q3KtS6y9EJL5Rhow__);
+}
+
+#foto3 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/7700/4a4a/d806afaaeb75d11232eab4f4127db77d?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zyc2d4XMDPC4xCsdJs6r7fPqo7btMYGjBew7ggkFwGyRYXaEbJuwApf1OsHIT418WZkhqAzpIcNwDMiVehveiO3hDh5Rkdo6qfaY1zs1ACXkBgVCoFKXZm9ap77SYXO4wvnnf4mFe4lZlsRQjd3oEprNVJKwC~cssePhi9O7FIOFs77D4qW6Wwc0u8bMNJwLTfDtW7T8D51m8IgpOUDRa9WWzZjIoYkpflMmqzM9LGN-0FwrAgiN6xYolricq3-1PsX4MQ~14alWrC4WJokFFdu-G4VXR9HZK2fhfWjVVxeJOOn9K4-bj9JoU56nJWIvYNJU27whJeXMQ26l7h90cA__);
+}
+
+#foto4 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/3ce4/1679/a7895fb6a8be3c31b0fdc702f1234a6d?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HvtzGU9JcRBx4k7BGiPL0c-MMJ9etrgplZaDuIkvM1Zno613c-IyqRQwebZgATNlg96OEiCO418pYEobeEyYcOUAa-TDgr~IAZ6rPuzMQRNz7KMbOhavEESA2WM-wMVL14ThGIWTwSwNVIoOf-9h-7EZokb3bxiU~XweUbuiKcdB75gB2DKYPSPcrINIrBfp1RD4VhsTA~bN-SFexzKWDBlgqsY2LFAyQulrEcpU7Q6CELywF5D53KpGC86ILIEj5fVd6eYMRBt7ZZLqmoppCiNhHVCfXZS0HMnyNZ0fN2saDXLlq8CXUNszEiT8hIzxOP93HBRDvG90nASUoQKGHQ__);
+}
+
+.foto {
+    width: 100%;
+    height: 431px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.datacontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.pasirinkimai {
+    display: flex;
+    width: 100%;
+height: 41px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.spalvacontainer {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+}
+
+button {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 32px;
+gap: 8px;
+
+width: 100px;
+height: 41px;
+border-color: #84AD40;
+background: #84AD40;
+border-radius: 4px;
+}
+
+button > p {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+
+.wraper1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+padding-top: 16px;
+padding-bottom: 16px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+.wraper2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+}
+
+.wraper3 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 768pxx-width: ;) {
+    .kortacontainer {
+        display: none;
+    }
+}
