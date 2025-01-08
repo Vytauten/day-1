@@ -4,10 +4,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
-    margin-left: 160px;
-    margin-right: 160px;
+    align-items: center;
+ 
 
 }
+
+
 
 h1 {
 font-family: 'Poppins';
@@ -17,12 +19,12 @@ font-size: 72px;
 line-height: 150%;
 color: #000000;
 margin: 0;
-margin-left: 50px:
+width: 100%;
 flex: none;
 order: 0;
 flex-grow: 0;
 height: 162px;
-
+text-align: left;
 }
 
 h2 {
@@ -39,7 +41,7 @@ flex-grow: 0;
 
 }
 
-P {
+p {
 
 
 font-family: 'Inter';
@@ -56,6 +58,7 @@ margin: 0;
 
 .kortacontainer {
     width: 25%;
+max-width: 376px;
     height: auto;
     display: flex;
 flex-direction: column;
@@ -65,7 +68,32 @@ background: #FFFFFF;
 border: 1px solid #84AD40;
 box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 border-radius: 16px;
+
 }
+
+.wraper2 {
+    display: flex;
+    flex-direction: row;
+    border: solid red;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1700px;
+}
+
+
+.wrap3 {
+    display: flex;
+    flex-direction: column;
+    border: solid blue;
+    padding: 0;
+    width: 100%;
+    max-width: 1700px;
+}
+
 
 #foto1 {
     background-image: url(https://s3-alpha-sig.figma.com/img/5846/35d6/80147faad158eec9812bd211e8267280?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qFfJzq9VVK8su4XQYspCDS2msJEj0DJlcetYemBxUYcKAb9RjqFuFiKNau81NzP5AvIdXLDOLdKSfV5u1Ihx7B78eBDNfwZ~qYR3-8a1Q2C3DZDVCJtxAK2cL9~xUzbu~Aow6eK~O3D15O5NahmwOkiDI0VVnnJ~IBuzjNKoKxyCA5hmP1j6Muhggmt53Eb-a~3n7AFu3LJ8aA5Tk0zbQANZX6PxrZKN4rhA7BAOmIV3te57E2ojZ9MRbVIjsJKNSO1JgP5SmY9X13CdzsQfHAi-RhY7BCMhNdD~tYMidk-iX~Vp4TlwzELe2xTd0K-qcVfkibQtiIbusKI1hxgUfg__);
@@ -98,16 +126,18 @@ border-radius: 16px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    height: fit-content;
 
 }
 
 .pasirinkimai {
     display: flex;
     width: 100%;
-height: 41px;
+height: auto;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+flex-wrap: wrap;
 
 }
 
@@ -153,24 +183,43 @@ padding-left: 24px;
 padding-right: 24px;
 }
 
-.wraper2 {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    margin: 0;
-}
 
-.wraper3 {
-    display: flex;
-    flex-direction: column;
 
-}
 
-@media screen and (min-width: 768pxx-width: ;) {
+@media (max-width: 768px) {
+    h1 {
+        font-size: 62px;
+    }
+    
+    .wraper2 {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 24px;
+    }
+    .wrap3 {
+        padding: 0;
+    }
+
     .kortacontainer {
-        display: none;
+        width: 45%;
+        max-width: 348px;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    .wraper2 {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .wrap3 {
+        padding: 0;
+    }
+
+    .kortacontainer {
+        width: 100%;
     }
 }
