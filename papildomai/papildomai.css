@@ -1,0 +1,20 @@
+#div1 > p  {
+    font-size: 2em;
+}
+
+#div1 > ul > li  {
+    font-size: 2em;
+}
+
+mark:hover {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#div1 li:hover {
+    position: relative;
+    left: 20px;       
+}
+

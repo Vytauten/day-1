@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+p {
+    background-color: white;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.div1 {
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    height: 20vh;
+      
+}
+
+.div1 > p {
+   height: auto;
+}
+
+.div2 {
+    background-color: green;
+    padding: 10px;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div3 {
+    background-color: rgb(43, 86, 226);
+    padding: 10px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.div4 {
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.div5 {
+    background-color: olivedrab;
+    height: 20vh;
+    display: flex;
+    padding: 10px;
+    align-items: end;
+    justify-content: end;
+}
+

@@ -1,0 +1,160 @@
+contai
+
+body {
+    justify-content: center;
+    background-color: #FEFEFE;
+}
+
+.navbar {
+    height: 108px; 
+}
+
+.navbar > .container-xxl {
+    justify-content: space-between!important;
+    display: flex!important;
+}
+
+ .nav-item .nav-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    flex: none;
+    border-radius: 20px;z
+}
+
+.nav-item .nav-link:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+   
+    gap: 8px;
+    background: #E7852B;
+    border-radius: 20px;
+ 
+}
+
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex!important;
+    gap: 40px;
+}
+
+@media screen(max-width: 768px) {
+    .navbar-nav {
+        display: flex!important;
+        gap: 32px;
+    }
+    
+}
+
+#foto1 {
+    background-image: url(https://s3-alpha-sig.figma.com/img/4a7a/24d6/b4ca63f166105313f803fc04f42b436c?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VTc87WIyE95ZL9XzYkpKDsmfejEyacyaetM9IesUlvOvSEIMQH6zsi481fbeXTwHlgUK5DMR-fgiOXesW~X5Ctv0~1pDGTayLT1wWHcmYyVWLa5jrx1jNfpUhOGAL2pz6Mvzo-0t4KMGXbmLMRSgvOMSzZg9piP63pLvpEusM2u4gwSIc8PNpSHSSrZe2BvXSuHydalUoLlVqA4O7g-VGN0abzSlaiCu5ZLr8~YCRnlC7NyjpWOwOMSNM-T~j3W1FB0xEEJWdliiWfiJBBwxc93129HCV0UJnc-dHOAAgYJbNX~boXw3wOl~avQyRRqJHszJ6jXXCm5OhFEYX6oFiQ__);
+    width: 100%;
+    height: 89vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+ 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 82px;
+line-height: 110%;
+color: #000000;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+h2 {
+    /* Mes jums padėsime. */
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+
+color: #E7852B;
+
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.button1 {
+border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 8px;
+ 
+    background: #E7852B;
+    border-radius: 4px;
+    }
+
+ .button2 {
+    /* Button */
+
+box-sizing: border-box;
+
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 8px;
+
+
+border: 2px solid #000000;
+border-radius: 4px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+ }   
+
+ .button1 {
+    /* Žiūrėti automobilius */
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+ }

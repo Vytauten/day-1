@@ -1,0 +1,54 @@
+.div1 {
+    margin: 0;
+    height: 50%;
+    width: auto;
+    background-image: url(https://media.istockphoto.com/id/2004891062/photo/happy-mid-aged-business-woman-manager-handshaking-greeting-client-in-office.jpg?s=2048x2048&w=is&k=20&c=9Zw1gGXtA8xhUQYOeKFNyg74YhRWq8pvibtLfqt5SAY=);
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.div2 {
+    margin: 0;
+    height: 50%;
+    width: auto;
+    background-color: bisque;
+    padding: 10px 20px 10px 20px;
+    display: block;
+}
+
+.container {
+    height: 300px;
+    max-width: 300px;
+    display: block;
+    background-color: bisque;
+    box-shadow: 0 6px 90px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+    
+    
+}
+
+p {
+    font-size: 14px;
+}
+
+.info {
+    padding: 5px;
+    background-color: aliceblue;
+    width: fit-content;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+#divfoto {
+    background-image: url(https://media.istockphoto.com/id/1500580184/photo/a-businesswoman-handshake-with-a-male-colleague-after-a-successful-business-meeting.jpg?s=2048x2048&w=is&k=20&c=WVFjdFM6tF_AiYA56u58Dd1NvgEYgV3o18EZNnMx-kQ=);
+}
