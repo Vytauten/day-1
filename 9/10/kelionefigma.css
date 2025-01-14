@@ -122,6 +122,7 @@ color: #1F1F1F;
     background-repeat: none;
     height: 290px;
     border-radius: 16px;
+    margin-bottom: 8px;
 }
 
 #mini-card-foto1 {
@@ -231,5 +232,39 @@ color: #1F1F1F;
 .bg-pink {
 
 background: #FF6978;
+
+}
+
+.footer-links-container {
+
+}
+
+.footer-links-container a {
+text-decoration: none;
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #1F1F1F;
+}
+
+.footer-links-container a:first-child {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+color: #1F1F1F;
+
+margin-bottom: 10px;
+
+}
+
+.footer-braker {
+
+
+border: 2px solid rgba(255, 255, 255, 0.25);
+
+
 
 }
