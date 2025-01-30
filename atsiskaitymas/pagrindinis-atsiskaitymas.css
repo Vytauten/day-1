@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
     background-color: #2B2B2B;
 }
@@ -616,6 +620,7 @@ color: #FFFFFF;
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
   }
 
   .categories-card-img {
@@ -626,7 +631,571 @@ background-position: center center;
 background-size: cover;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
-filter: blur(8px);
-z-index: -1;
-  -webkit-filter: blur(8px);
+filter: blur(2px);
+background-color: rgba(1, 1, 1, 0,25);
+  -webkit-filter: blur(2px);
+ 
   }
+
+  .browse-card-icon {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+  }
+
+  .section-5-bg {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(162,89,255,1) 94%),
+    url(https://s3-alpha-sig.figma.com/img/a6f4/3f93/50c73503d13e1fe1a0e3277804ef1192?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UkdWUybZ01Cv6e~wyk0dzJZ6s-NEMyqtu864rl0Zrokt3Al7x5CIozxbvKvCw2R0s7elgZHMbBAOR0PGKJWyY6nlGkJS5oqCNkH~IF~ar1S-ABy19BdQU0ijkXQAUsPi-Hm0y6W-2QPiy2qODXRIy~K-niBT2e7FuJri7m8~G8uZhup9uWv5e65m1wr-pJh2qlXiKZC8h38CNPwiLWep8U10A9p-Ql0v4zR9H0mzF4HB~Tsy5rzU82iXESj4Jyn~~~czV6pZwLOpQ4-tb~Kl6Cw45D~KJQA~ZHa1Kv1hxn0-W~n2W5v85IPdEXCqFZObRPiAAir8luEAim9WX7WgYw__);
+  background-position: center center;
+  background-size: cover;
+height: 640px;
+display: flex;
+align-content: space-between;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-5-bg {
+        
+        height: 630px;
+    }
+  }
+
+  @media only screen and (max-width: 576px ) {
+    .section-5-bg {
+       
+        height: 593px;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .section-5-icon-container {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 151px;
+height: 64px;
+
+background: #3B3B3B;
+border-radius: 20px;
+
+  }
+
+  .section-5-heading-h1 h1 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 51px;
+line-height: 110%;
+/* or 56px */
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+
+.section-5-btn-wrap {
+
+}
+
+.section-5-btn {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 22px 50px;
+gap: 12px;
+
+width: 198px;
+height: 60px;
+
+
+background: #FFFFFF;
+border-radius: 20px;
+border: none;
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+text-align: center;
+
+/* Background */
+color: #2B2B2B;
+
+}
+
+.timer-wrap {
+  padding: 0px;
+}
+
+.timer {
+  /* Auction Timer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 30px;
+gap: 10px;
+
+
+
+background: rgba(59, 59, 59, 0.5);
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+
+
+}
+
+.timer-txt-1 {
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 110%;
+/* or 13px */
+
+/* Text */
+color: #FFFFFF;
+
+
+
+
+}
+
+.timer-txt-2-1 {
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 120%;
+/* identical to box height, or 46px */
+text-transform: capitalize;
+
+/* Text */
+color: #FFFFFF;
+text-align: center;
+
+}
+
+.timer-txt-2-2 {
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 110%;
+/* or 13px */
+
+/* Text */
+color: #FFFFFF;
+
+}
+
+.section-5-btn-desktop {
+
+}
+
+.section-5-btn-mobile {
+  width: 100%;
+  display: none;
+}
+
+
+@media only screen and (max-width: 576px ) {
+  .section-5-btn-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px ) {
+  .section-5-btn-mobile {
+    display: block;
+  }
+}
+
+
+
+.section-6-card {
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 30px 30px;
+
+
+
+
+background: #3B3B3B;
+border-radius: 20px;
+
+
+}
+
+.section-6-card-icon-wrap {
+
+}
+
+.section-6-card-txt-1 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 140%;
+/* identical to box height, or 31px */
+text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+
+.section-6-card-txt-2 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+text-align: center;
+
+/* White */
+color: #FFFFFF;
+
+}
+
+.newsletter-container {
+
+
+
+padding: 60px;
+
+
+background: #3B3B3B;
+border-radius: 20px;
+
+
+}
+
+.newsletter-img {
+  
+  background-image: url(https://s3-alpha-sig.figma.com/img/9f1a/3ec9/5772f9d568933f15578613e18c5adb73?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KXC1GRnfcMBVzgCdwruQ1dXEE-XZXak3iRKjnIkekLRQZVow6VEobO8Zp12rjnnP6tNr7IExsbq85qJiSh~8TN7qz5IoSBkanq4a5HbMjHwBruvleQ-qz6WPxTZrcv4AAZwvTloa7eooFmKNh-Tx4SpC1YMlPwvPIYKbzl52dB4TXs8i0rzsnEWcN0FphvoRTzNMBREpPokf7ljwUZ3vUupQEOtvUeHel4nAcPxVEY2ikQFNLwCCk3WOur~jbbxbMR6EfbhgAG2pzWMtzWn39DqOA39Y-uaKEa8MUwN5Citg4N14dEUIa9N6QsxPonqcasJuF0tcRXwvQvQrDhuxRQ__);
+height: 310px;
+background-position: center center;
+background-size: cover;
+border-radius: 20px ;
+
+}
+
+.newsletter-txt-1 {
+
+/* H3 - Work Sans */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 38px;
+line-height: 120%;
+/* or 46px */
+text-transform: capitalize;
+
+/* White */
+color: #FFFFFF;
+
+
+
+
+}
+
+.newsletter-txt-2 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 160%;
+/* or 35px */
+text-transform: capitalize;
+
+/* White */
+color: #FFFFFF;
+
+
+}
+
+.nesletter-btn-1 {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px 0px 16px 20px;
+
+
+text-align: center;
+border: none;
+background: #FFFFFF;
+border-radius: 20px;
+width: 130%;
+flex-grow: 2;
+}
+
+.nesletter-btn-2 {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 0px 16px 20px;
+
+text-align: center;
+width: 100%;
+
+/* Call to Action */
+background: #A259FF;
+border-radius: 20px;
+color: #FFFFFF;
+border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter-btns-dekstop {
+      
+      display: none;
+  }
+}
+
+.newsletter-btns-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter-btns-mobile {
+      
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nesletter-btn-1 {
+      
+     width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nesletter-btn-2 {
+      
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter-container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.news-wrapp {
+  width: 100%;
+  
+}
+
+footer {
+
+}
+
+.p-tv-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-txt-1 {
+
+
+/* Base(Body) - Work Sans */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #CCCCCC;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-header {
+ 
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 160%;
+/* or 35px */
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+}
+
+.footer-braker {
+
+border: 1px solid #858584;
+
+
+}
+
+.copyright {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 110%;
+/* or 13px */
+
+color: #CCCCCC;
+
+}
+
+.marketplace-section-1-heading-h1 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 51px;
+line-height: 110%;
+/* or 56px */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+/* White */
+color: #FFFFFF;
+
+}
+
+.marketplace-section-1-heading-h2 h2 {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 160%;
+/* or 35px */
+
+/* White */
+color: #FFFFFF;
+
+
+
+}
+
+.marketplace-search {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+padding: 12px 0px;
+
+
+width: 100%;
+
+
+
+border: 1px solid #3B3B3B;
+border-radius: 20px;
+
+
+}
+
+p.search-text {
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+padding-bottom: 0px;
+color: #858584;
+margin-bottom: 0;
+padding-left: 50px;
+
+}
+
+#marketplace-card-img-1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/138c/f49a/c8b9122a6caea314c4c42023a611e74a?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ezPHHF9ob8YY104rAYnJ0A8aTFDC3YD-9UoFHK~DglgRYXZ88dOkZEA1Otmi4qgwbNIHJqP9xiRnnZ7z-eh1hn361esTWiTDq4yPsyxZ~gQ0LBpRYRcjzvGcDyG2QsUbIwM5TMT4E2YFoRWRNpFf7fCQsQMnzno5SFYsSFHbmfq1ptxm6PgGfGaBVGGxGkDK70dD1JCJS6LCffvtTpGiIKIiWmWfByHM4KUF91FkVfXymq7anIjk1bUxzRZHFq0z5W8lm4aONOaMSOekRvSaD3eJMnZtiauzDSmyykyJi3I4-gEW-iwDEsbgMyr~B-slvCCan0~g2Ek7cmyzVfv8Xw__);
+}
+
+.market-card-wrap {
+  position: relative;
+  top: -20px;
+  z-index: 1;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.market-txt-1 {
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 110%;
+/* or 13px */
+
+color: #858584;
+
+
+}
+
+.market-txt-2 {
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+/* White */
+color: #FFFFFF;
+
+
+
+}
+
+.footer-braker-t {
+  
+  
+  border-top: solid 0.5px #2B2B2B;
+
+}
