@@ -1,0 +1,71 @@
+html, body {
+margin: 0;
+padding: 0;
+font-family: "Roboto", sans-serif;
+}
+
+.irasai {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+
+}
+
+a {
+    color: rgb(59, 180, 168);
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.likes {
+    margin-top: 0px;
+}
+
+.containeris {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+.containeris > h2 {
+    padding: 20px;
+   
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    font-weight: 700;
+    background-color: rgb(29, 225, 167);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    width: 200px;
+    transition: ease-in all 0.5s;
+   
+}
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+

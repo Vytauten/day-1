@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Labas aš Krabas, čia mano blogas, nes aš geras",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium turpis eget magna malesuada, a semper mi tincidunt. Ut vitae sapien at turpis pretium convallis. Vestibulum urna purus, aliquam pulvinar luctus non, hendrerit ut leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam quam ut velit venenatis, vel efficitur nisl rutrum. Aliquam tristique urna non felis vulputate, in cursus justo ornare. Etiam ut quam et diam ultricies pretium. Mauris at maximus tortor. Integer maximus vehicula vehicula. Ut ut dui ultrices, aliquet turpis quis, faucibus ligula. Duis sollicitudin fermentum quam, in fringilla diam iaculis in. Aenean accumsan erat leo, id tincidunt nulla blandit a. Donec et dapibus magna, non pellentesque tortor. Sed sodales, ex non auctor euismod, risus nibh interdum leo, ac ultricies sapien metus nec est.",
+      "likes": 500
+    },
+    {
+      "id": "2",
+      "title": "Kuom kada kur į niekur",
+      "body": "Praesent ultricies suscipit sapien nec semper. Aliquam id auctor ipsum, eu efficitur magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus cursus sapien fermentum ullamcorper convallis. Maecenas purus orci, bibendum vitae nibh ac, congue posuere risus. Cras nec quam eu justo fringilla feugiat nec fringilla velit. Sed eu velit id est ullamcorper feugiat sit amet id velit.",
+      "likes": 200
+    },
+    {
+      "id": "3",
+      "title": "Bla ble bla gra na ma na ",
+      "body": "Nullam gravida euismod diam, quis semper libero aliquam volutpat. Fusce eu pretium purus, et imperdiet nisi. Etiam sagittis justo ac nibh lacinia, vitae aliquet sem laoreet. Cras vitae magna ut sapien consectetur mollis elementum sed elit. Donec luctus ullamcorper hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla lacus lacus, tincidunt a risus a, blandit convallis leo. Ut mattis, tellus at venenatis maximus, metus est tincidunt velit, ac feugiat orci tortor sed risus. Maecenas ante tortor, convallis et nunc et, pulvinar sollicitudin mi. Fusce id lorem auctor nulla feugiat interdum. Aenean gravida venenatis arcu at imperdiet. Donec tincidunt ligula eget erat consectetur, rhoncus ultrices orci bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+      "likes": 20
+    },
+    {
+      "id": "f770",
+      "title": "yes sir",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id mi venenatis odio dignissim iaculis eget et velit. Nulla ligula neque, venenatis vel cursus quis, pretium vitae magna. Nullam id justo vel leo vehicula sodales. Ut sagittis libero et tempor commodo. Sed suscipit sem dui, id consectetur mauris vehicula eget. Nulla lobortis nunc mauris, id lobortis ipsum euismod vel. Morbi justo neque, eleifend tempor rhoncus eu, posuere vitae odio. Etiam ullamcorper dapibus quam, vitae posuere magna ornare at. Quisque justo diam, malesuada non metus eget, placerat semper libero. Vivamus in eros commodo, gravida quam ut, egestas odio. Integer accumsan malesuada varius. Fusce sit amet consequat mi. Ut eget mi pulvinar, accumsan turpis et, vulputate sem. Nunc sit amet iaculis tellus, id egestas ligula. Nulla leo odio, pharetra at libero in, laoreet egestas ligula.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec metus ac lectus luctus rutrum eu et massa. Donec fermentum, urna nec rutrum congue, urna odio dignissim leo, eleifend aliquam nibh nulla quis lacus. Quisque fermentum efficitur felis, ac maximus enim venenatis ut. Vestibulum ut consequat justo, eget fringilla eros. Praesent non velit sodales, malesuada ex eget, laoreet neque. Vivamus eu vestibulum ipsum. Suspendisse accumsan euismod ex eu dictum. Vivamus sed sollicitudin massa. Etiam at massa turpis. Proin sodales tincidunt libero, a luctus sem imperdiet ut.\n\nSed quam nibh, egestas vitae nisl molestie, vestibulum imperdiet justo. Fusce id gravida ante, et pharetra lectus. Aliquam nulla nulla, consectetur quis laoreet quis, ultricies ut felis. Aenean gravida mi et lorem consequat tristique. Nam ut odio dui. Ut efficitur ultrices vehicula. Vestibulum iaculis molestie tellus placerat egestas.\n\nAliquam ipsum leo, porta et sagittis sit amet, posuere vitae magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce blandit lorem non massa tincidunt pulvinar. Etiam rutrum iaculis erat, eu fringilla velit convallis ac. Maecenas vel magna ac mauris tempus accumsan ac id nisl. Aenean consequat odio quis elit commodo tempus. Nunc venenatis lectus diam, in suscipit ligula porta eget. Donec ut convallis ipsum. Cras dictum eleifend sapien, nec cursus ante finibus a. Proin sit amet nunc mi.\n\nDonec a accumsan neque. Morbi finibus sit amet augue id fermentum. Vivamus iaculis aliquam velit quis commodo. Maecenas semper, justo auctor viverra rutrum, tellus nulla condimentum libero, non iaculis felis nisl ac nibh. Phasellus hendrerit nulla tortor, nec fringilla diam pretium blandit. Mauris blandit elementum magna, at tincidunt mauris posuere a. Mauris nec urna sagittis, condimentum risus eget, rutrum urna. Praesent eget mi quis erat ultricies lacinia eu eu elit. Pellentesque condimentum ligula quis ante posuere, ac tempor nisl",
+      "likes": 0
+    }
+  ],
+  "polls": [
+    {
+      "id": "1",
+      "question": "kas patinka labiau, kebabas ar burgeris?",
+      "answerA": "kebabas",
+      "answerB": "burgeris"
+    }
+  ]
+}
