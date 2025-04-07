@@ -1,0 +1,15 @@
+.mokymu-wrapper {
+    display: flex;
+    flex: row;
+    gap: 20px;
+  
+}
+
+.mokymas2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid rgb(240, 127, 14);
+    border-radius: 10px;
+    padding: 10px;
+}

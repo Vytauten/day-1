@@ -1,0 +1,21 @@
+.naujienos-wrapper {
+    background-color: blanchedalmond;
+    color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.naujienos-wrapper .naujienos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+
+}
+
+.naujienos-wrapper .naujiena-blokas {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}

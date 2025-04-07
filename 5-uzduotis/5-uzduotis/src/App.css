@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+}

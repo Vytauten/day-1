@@ -1,0 +1,8 @@
+.img-div {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/1920px-London_Skyline_%28125508655%29.jpeg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}

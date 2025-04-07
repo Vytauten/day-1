@@ -1,0 +1,14 @@
+.footer p {
+    width: calc(50% - 10px);
+    padding: 10px;
+}
+
+.footer {
+    width: calc(100% - 10px);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-top: solid 1px rgb(245, 245, 245);
+}
+
