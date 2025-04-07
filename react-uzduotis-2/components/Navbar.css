@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}

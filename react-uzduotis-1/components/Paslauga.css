@@ -1,0 +1,18 @@
+.paslauga {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    gap: 10px;
+    border-radius: 10px;
+    width: calc(50% - );
+}
+
+.paslauga-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: nowrap;
+    
+}
