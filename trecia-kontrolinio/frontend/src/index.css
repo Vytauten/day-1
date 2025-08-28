@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --pirma: rgb(186, 98, 4);
+  --antra: rgb(49, 29, 8);
+  --tracia: rgb(239, 65, 11);
+}
+
+body {
+  background: #f8e7da;
+  margin: 0;
+  font-family: "Montserrat";
+  padding: 20px;
+}
+
+p {
+  color: var(--antra);
+}
+
+input.error {
+  border: 1px solid red;
+  color: var(--pirma);
+}
+
+textarea.error {
+  border: 1px solid red;
+}
+
+button {
+  background: var(--pirma);
+  padding: 10px;
+  border: 1px solid;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+  transition: ease-in-out 0.3s;
+}
+
+form {
+  display: grid;
+  max-width: 300px;
+  width: 100%;
+}
+
+form button {
+  max-width: 150px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #eed47e;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #eed47e;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.galiojantis label {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input[checkbox] {
+  scale: 5;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 30px;
+}
+
+.job-details span {
+  background: var(--tracia);
+  padding: 10px;
+  border: 1px solid;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+}
+
+h1 {
+  font-family: "Montserrat";
+  text-decoration: none;
+}
