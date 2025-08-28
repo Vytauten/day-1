@@ -1,0 +1,15 @@
+    <%- include('partials/header'); -%>
+    <div class="create-prog">
+      <form method="POST" action="/prideti">
+        <label for="title">Pamokos pavadinimas: </label>
+        <input type="text" id="title" name="title" />
+        <label for="Santrauka">Santrauka: </label>
+        <input type="text" id="santrauka" name="santrauka" /><br />
+        <label for="body">Turinys: </label>
+        <textarea id="body" rows="5" name="body"></textarea>
+        <button>Išsiųsti</button>
+      </form>
+    </div>
+  </body>
+</html>
+<%- include('partials/footer'); -%>

@@ -1,0 +1,255 @@
+<%- include('partials/header'); -%>
+
+<h1 class="title">Programuotojai API</h1>
+<div id="homepage">
+  <h2>Surask programuotoją šalia savęs!</h2>
+  <div id="devs"></div>
+</div>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://unpkg.com/react@15/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+
+<!-- Create React Component -->
+<script type="text/babel">
+  var Devs = React.createClass({
+    getInitialState: function () {
+      return {
+        devs: [],
+      };
+    },
+    render: function () {
+      var devs = this.state.devs;
+      devs = devs.map((dev, index) => {
+        return (
+          <div>
+            <li key={index}>
+              <span className={dev.laisvas ? "free" : "busy"}></span>
+              <span className="name">{dev.vardas}</span>
+              <span className="rank">{dev.tech.join(", ")}</span>
+              <span className="dist">{Math.floor(dev.distance / 1000)} km</span>
+              <button
+                className="trinti-btn"
+                onClick={() => this.handleDelete(dev._id)}
+              >
+                Ištrinti programuotoją
+              </button>
+            </li>
+
+            <form
+              ref="change"
+              id="change"
+              onSubmit={(e) => this.handleChange(e, dev._id)}
+            >
+              <h3>Pakeisti programuotojo duomenis</h3>
+              <label>Vardas:</label>
+              <input
+                type="text"
+                ref="vardas"
+                placeholder={dev.vardas}
+                required
+              />
+
+              <label>Technologijos (atskirkite kableliais):</label>
+              <input
+                type="text"
+                ref="tech"
+                placeholder={dev.tech.join(", ")}
+                required
+              />
+              <label>Laisvas:</label>
+              <select ref="laisvas">
+                <option value="true">Taip</option>
+                <option value="false">Ne</option>
+              </select>
+
+              <label>Ilguma:</label>
+              <input
+                type="number"
+                ref="lngNew"
+                step="any"
+                placeholder={dev.location.coordinates[0]}
+                required
+              />
+              <label>Platuma:</label>
+              <input
+                type="number"
+                ref="latNew"
+                step="any"
+                placeholder={dev.location.coordinates[1]}
+                required
+              />
+
+              <input type="submit" value="Pakeisti duomenis" />
+            </form>
+          </div>
+        );
+      });
+
+      return (
+        <div id="dev-container">
+          <form id="search" onSubmit={this.handleSubmit}>
+            <label>Ilguma:</label>
+            <input type="number" ref="lng" placeholder="ilguma" required />
+            <label>Platuma:</label>
+            <input type="number" ref="lat" placeholder="platuma" required />
+            <input type="submit" value="Rasti programuotojus" />
+          </form>
+          <ul>{devs}</ul>
+
+          <form ref="create" id="create" onSubmit={this.handleCreate}>
+            <h3>Pridėti programuotoją</h3>
+            <label>Vardas:</label>
+            <input type="text" ref="vardas" placeholder="vardas" required />
+
+            <label>Technologijos (atskirkite kableliais):</label>
+            <input
+              type="text"
+              ref="tech"
+              placeholder="pvz: JS, Node, Mongo"
+              required
+            />
+
+            <label>Laisvas:</label>
+            <select ref="laisvas">
+              <option value="true">Taip</option>
+              <option value="false">Ne</option>
+            </select>
+
+            <label>Ilguma:</label>
+            <input
+              type="number"
+              ref="lngNew"
+              step="any"
+              placeholder="ilguma"
+              required
+            />
+            <label>Platuma:</label>
+            <input
+              type="number"
+              ref="latNew"
+              step="any"
+              placeholder="platuma"
+              required
+            />
+
+            <input type="submit" value="Sukurti programuotoją" />
+          </form>
+        </div>
+      );
+    },
+
+    handleSubmit: function (e) {
+      e.preventDefault();
+      var lng = this.refs.lng.value;
+      var lat = this.refs.lat.value;
+
+      fetch("/api/programuotojai/?lng=" + lng + "&lat=" + lat)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((json) => {
+          this.setState({
+            devs: json,
+          });
+          console.log(json);
+        })
+        .catch((error) => {
+          console.error("Error during fetch:", error);
+        });
+    },
+
+    handleCreate: function (e) {
+      e.preventDefault();
+
+      const vardas = this.refs.vardas.value;
+      const tech = this.refs.tech.value.split(",").map((t) => t.trim());
+      const laisvas = this.refs.laisvas.value === "true";
+      const lng = parseFloat(this.refs.lngNew.value);
+      const lat = parseFloat(this.refs.latNew.value);
+
+      const newDev = {
+        vardas,
+        tech,
+        laisvas,
+        location: {
+          type: "Point",
+          coordinates: [lng, lat],
+        },
+      };
+
+      fetch("/api/programuotojai", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newDev),
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          console.log("Created:", json);
+          alert("Programuotojas sukurtas!");
+          if (this.refs.create && this.refs.create.reset) {
+            this.refs.create.reset();
+          }
+        })
+        .catch((error) => console.error("Error creating programmer:", error));
+    },
+
+    handleDelete: function (id) {
+      fetch("/api/programuotojai/" + id, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((deleted) => {
+          console.log("Programuotojas ištrintas", deleted);
+
+          this.setState({
+            devs: this.state.devs.filter((d) => d._id !== id),
+          });
+        });
+    },
+
+    handleChange: function (e, id) {
+      e.preventDefault();
+
+      const vardas = e.target.vardas.value;
+      const tech = e.target.tech.value.split(",").map((t) => t.trim());
+      const laisvas = e.target.laisvas.value === "true";
+      const lng = parseFloat(e.target.lngNew.value);
+      const lat = parseFloat(e.target.latNew.value);
+
+      const updatedDev = {
+        vardas,
+        tech,
+        lasivas,
+        location: {
+          type: "Point",
+          coordinates: [lng, lat],
+        },
+      };
+
+      fetch("/api/programuotojai" + id, {
+        method: "PUT",
+        headers: { "Content-Type": "Applicatipn/json" },
+        body: JSON.stringify(updatedDev),
+      })
+        .then((res) => res.json)
+        .then((dev) => {
+          console.log("Updated", dev);
+
+          this.setState({
+            devs: this.state.devs.map((d) => (d._id === id ? dev : d)),
+          });
+
+          alert("Duomenys atnaujinti");
+          e.target.reset();
+        })
+        .catch((err) => console.log("Klaida atnaujinant", err));
+    },
+  });
+  ReactDOM.render(<Devs />, document.getElementById("devs"));
+</script>
+
+<%- include('partials/footer'); -%>
